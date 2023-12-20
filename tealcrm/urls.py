@@ -11,6 +11,7 @@ urlpatterns = [
     path('', index, name='index'),
     path('dashboard/leads/', include('lead.urls')),
     path('dashboard/clients/', include('client.urls')),
+    path('cafe', include('cafe.urls')),
     path('dashboard/teams/', include('team.urls')),
     path('dashboard/', include('userprofile.urls')),
     path('dashboard/', include('dashboard.urls')),
