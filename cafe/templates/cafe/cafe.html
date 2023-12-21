@@ -6,23 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ресторан "Вкусное Приключение"</title>
     <style>
-        /* ... (предыдущие стили) */
-
+        body {
+            background-image: url('https://kartinki.pics/uploads/posts/2022-12/thumbs/1670049562_3-kartinkin-net-p-fon-dlya-saita-restorana-vkontakte-5.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+    
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        header {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+    
+        nav {
+            margin-bottom: 20px;
+        }
+    
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+    
+        nav a:hover {
+            border-bottom: 2px solid white;
+        }
+    
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    
+        section {
+            margin-bottom: 40px;
+        }
+    
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    
         #menu-items {
             text-align: left;
         }
-
+    
         .menu-item {
             margin-bottom: 20px;
         }
-
+    
         .menu-item img {
             max-width: 100%;
+            height: auto;
             border-radius: 5px;
         }
-
+    
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+    
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            
+        }
+    
         /* ... (предыдущие стили) */
     </style>
+    
 </head>
 
 <body>
@@ -38,7 +102,8 @@
 
         <div class="content">
             <section id="about">
-                <!-- ... (предыдущий контент) -->
+                <h2>О нас</h2>
+                <p>Добро пожаловать в ресторан "Вкусное Приключение"! Мы предлагаем вам уникальные блюда и атмосферу.</p>
             </section>
 
             <section id="menu">
@@ -59,21 +124,49 @@
             </section>
 
             <section id="gallery">
-                <!-- ... (предыдущий контент) -->
+                <h2>Галерея</h2>
+                <p>Посмотрите наши фотографии и почувствуйте атмосферу ресторана.</p>
+                
+                <div class="gallery-item">
+                    <img src="https://data.kaktus.media/image/big/2019-05-16_11-40-27_291680.jpg" alt="Описание изображения 1">
+                </div>
+            
+                <div class="gallery-item">
+                    <img src="https://www.akchabar.kg/media/news/5407ad4a-00ab-47f1-b18e-5489dee2d81e.JPG.850x445_q80_crop.jpg" alt="Описание изображения 2">
+                </div>
+            
+                <!-- Добавьте сколько угодно изображений -->
             </section>
+            
 
             <section id="reviews">
-                <!-- ... (предыдущий контент) -->
-            </section>
-
+                <h2>Отзывы</h2>
+                <p>Читайте отзывы наших довольных клиентов.</p>
+            </section> 
+            
             <section id="contacts">
-                <!-- ... (предыдущий контент) -->
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами, чтобы забронировать столик или получить дополнительную информацию.</p>
+                <p>Телефон: +996 555 123 456</p>
+                <p>Email: info@vkusnoe-priklyuchenie.com</p>
+                <p>Адрес: г. Бишкек, ул. Гастрономическая, д. 42</p>
+                <p>Мы находимся в самом центре города, приходите на вкусное приключение!</p>
             </section>
-        </div>
+            
+            <section id="specials">
+                <h2>Акции</h2>
+                <p>Только сегодня! При заказе двух блюд - третье в подарок!</p>
+                <p>А еще, каждый 10-й посетитель получает бесплатную шаверму! Не упустите свое вкусное приключение!</p>
+            </section>
+            
+            <footer>
+                <p>&copy; 2023 Ресторан "Вкусное Приключение". Все права защищены.</p>
+            </footer>
 
-        <footer>
-            <p>&copy; 2023 Ресторан "Вкусное Приключение". Все права защищены.</p>
-        </footer>
+            
+            
+
+            
     </div>
 </body>
 
