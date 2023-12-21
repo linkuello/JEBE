@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background: url('cafe/img/background.jpg') center/cover no-repeat fixed; 
+            background-image: url("background.jpg"); 
         }
 
         header {
@@ -49,6 +49,16 @@
             padding: 1em;
         }
 
+        #image-slider {
+        display: flex;
+        overflow: hidden;
+        }
+        #image-slider img {
+        width: 33%;
+        transition: transform 1s ease-in-out;
+        }
+
+
         /* Color styles for specific sections */
         #home {
             background-color: #ff8a80; /* Light red */
@@ -59,11 +69,15 @@
         }
 
         #about {
-            background-color: #ef9a9a; /* Light pink/red */
+            background-color: #81c784; /* Light pink/red */
+        }
+
+        #special-offers {
+            background-color: #ef9a9a; /* Green */
         }
 
         #contact {
-            background-color: #4caf50; /* Green */
+            background-color: #ef9a9a; /* Green */
         }
     </style>
 </head>
@@ -78,12 +92,20 @@
         <a href="#menu">Menu</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
+        <a href="#special-offers">Special-offers</a>
     </nav>
 
     <section id="home">
         <h2>Welcome to Cafe Name!</h2>
         <p>Discover a cozy and inviting atmosphere with a menu that caters to every taste.</p>
     </section>
+
+    <div id="image-slider">
+        <img src="image1.jpg" alt="Cafe Image 1">
+        <img src="image2.jpg" alt="Cafe Image 2">
+        <img src="image3.jpg" alt="Cafe Image 3">
+    </div>
+    
 
     <section id="menu">
         <h2>Our Menu</h2>
@@ -112,6 +134,21 @@
         </ul>
     </section>
     
+    <section id="special-offers">
+        <h2>Special Offers</h2>
+
+        <div class="offer">
+            <h3>Happy Hour</h3>
+            <p>Enjoy 20% off on all drinks from 4 PM to 6 PM!</p>
+        </div>
+
+        <div class="offer">
+            <h3>Lunch Combo</h3>
+            <p>Try our delicious lunch combo for only $10.99. Available weekdays from 11 AM to 2 PM.</p>
+        </div>
+
+        <!-- Add more offers as needed -->
+    </section>
 
     <section id="about">
         <h2>About Us</h2>
