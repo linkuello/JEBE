@@ -9,13 +9,17 @@ class AddClientForm(forms.ModelForm):
     email = forms.CharField(
         widget=forms.TextInput(attrs={"class": "w-full py-4 px-6 rounded-xl bg-gray-100"})
     )
+    worker_number = forms.IntegerField(  # Добавленное поле "worker's number"
+        widget=forms.NumberInput(attrs={"class": "w-full py-4 px-6 rounded-xl bg-gray-100"})
+    )
     description = forms.CharField(
         widget=forms.Textarea(attrs={"rows":"5", "class": "w-full bg-gray-100 rounded-xl"})
     )
+    
 
     class Meta:
         model = Client
-        fields = ('name', 'email', 'description',)
+        fields = ('name', 'email', 'description', 'worker_number',)
 
 class AddCommentForm(forms.ModelForm):
     content = forms.CharField(
