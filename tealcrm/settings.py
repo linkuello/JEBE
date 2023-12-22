@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'lead',
     'team',
     'cafe',
+    'SpecialOffers',
     'userprofile',
 ]
 
