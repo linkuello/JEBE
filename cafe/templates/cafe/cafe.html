@@ -7,178 +7,224 @@
     <title>Ням-Ням</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-image: url('https://kartinki.pics/uploads/posts/2022-12/thumbs/1670049562_3-kartinkin-net-p-fon-dlya-saita-restorana-vkontakte-5.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            background-image: url("background.jpg"); 
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
         }
 
         header {
-            background-color: #d32f2f;
-            color: white;
-            text-align: center;
-            padding: 1em;
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #d32f2f; /* Reddish color */
+            background-color: #000; /* Black background */
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block; /* Added this property to make it inline-block */
         }
 
         nav {
-            background-color: #c62828;
-            overflow: hidden;
+            margin-bottom: 20px;
         }
 
         nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+            color: #fff;
             text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: border-bottom 0.3s ease;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #d32f2f; /* Reddish color */
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
         section {
-            padding: 20px;
-            margin: 20px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        h2, h3 {
+            color: #d32f2f; /* Reddish color */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .offer {
+            background-color: #ef9a9a; /* Lighter reddish color */
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .offer h3 {
+            color: #d32f2f; /* Reddish color */
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
         }
 
         footer {
-            background-color: #d32f2f;
-            color: white;
-            text-align: center;
-            padding: 1em;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.7);
         }
 
-        #image-slider {
-        display: flex;
-        overflow: hidden;
-        }
-        #image-slider img {
-        width: 33%;
-        transition: transform 1s ease-in-out;
-        }
-
-
-        /* Color styles for specific sections */
-        #home {
-            background-color: #ff8a80; /* Light red */
+        /* New style for the square */
+        .square {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        #menu {
-            background-color: #81c784; /* Light green */
+        /* New style for the links inside the square */
+        .square a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: border-bottom 0.3s ease;
         }
 
-        #about {
-            background-color: #81c784; /* Light pink/red */
-        }
-
-        #special-offers {
-            background-color: #ef9a9a; /* Green */
-        }
-
-        #contact {
-            background-color: #ef9a9a; /* Green */
+        /* New style for the links inside the square on hover */
+        .square a:hover {
+            border-bottom: 2px solid #d32f2f; /* Reddish color */
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Ням-Ням</h1>
-    </header>
+    <div class="container">
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#special-offers">Special-offers</a>
-    </nav>
+        <!-- New square div for Cafe Name, Home, Menu, About Us, Contact, and Special Offers -->
+        <div class="square">
+            <header>
+                <h1>Cafe Name</h1>
+            </header>
 
-    <section id="home">
-        <h2>Welcome to Cafe Name!</h2>
-        <p>Discover a cozy and inviting atmosphere with a menu that caters to every taste.</p>
-    </section>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#special-offers">Special Offers</a>
+            </nav>
+        </div>
 
-    <div id="image-slider">
-        <img src="image1.jpg" alt="Cafe Image 1">
-        <img src="image2.jpg" alt="Cafe Image 2">
-        <img src="image3.jpg" alt="Cafe Image 3">
+        <section id="home" class="content">
+            <h2>Welcome to Cafe Name!</h2>
+            <p>Discover a cozy and inviting atmosphere with a menu that caters to every taste.</p>
+        </section>
+
+        <!-- Make sure the paths are correct based on your project structure -->
+        <div id="image-slider" class="content">
+            <img src="images/image1.jpg" alt="Cafe Image 1">
+            <img src="images/image2.jpg" alt="Cafe Image 2">
+            <img src="images/image3.jpg" alt="Cafe Image 3">
+        </div>
+
+
+        <section id="menu" class="content">
+            <h2>Our Menu</h2>
+            <p>Explore our delicious offerings that will satisfy your cravings.</p>
+
+            <h3>Main Courses</h3>
+            <ul>
+                <li>Doner Kebab</li>
+                <li>Kofta Kebab</li>
+                <li>Iskender</li>
+                <li>Manti</li>
+            </ul>
+
+            <h3>Appetizers</h3>
+            <ul>
+                <li>Hummus with Pita Bread</li>
+                <li>Baba Ganoush</li>
+                <li>Sigara Borek</li>
+            </ul>
+
+            <h3>Desserts</h3>
+            <ul>
+                <li>Baklava</li>
+                <li>Kunefe</li>
+                <li>Turkish Delight</li>
+            </ul>
+        </section>
+
+        <section id="special-offers" class="content">
+            <h2>Special Offers</h2>
+
+            <div class="offer">
+                <h3>Happy Hour</h3>
+                <p>Enjoy 20% off on all drinks from 4 PM to 6 PM!</p>
+            </div>
+
+            <div class="offer">
+                <h3>Lunch Combo</h3>
+                <p>Try our delicious lunch combo for only $10.99. Available weekdays from 11 AM to 2 PM.</p>
+            </div>
+        </section>
+
+        <section id="about" class="content">
+            <h2>About Us</h2>
+            <p>Welcome to Cafe Name, where passion for food meets a warm and inviting atmosphere. Our journey began with a vision to create a place where people can enjoy delightful meals in a cozy setting.</p>
+
+            <p>At Cafe Name, we take pride in offering a diverse menu that caters to various tastes, including a selection of delicious Turkish dishes. Our chefs use fresh and high-quality ingredients to craft each dish with care and attention to detail.</p>
+
+            <p>Our commitment goes beyond just great food. We strive to create a welcoming environment for our guests, whether you're here for a quick coffee, a hearty meal, or a leisurely gathering with friends and family.</p>
+
+            <p>Come and experience the unique blend of flavors, the friendly service, and the comfortable ambiance that make Cafe Name a special place. We look forward to serving you and making your dining experience memorable.</p>
+        </section>
+
+        <section id="contact" class="content">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to make a reservation? Reach out to us!</p>
+
+            <p><strong>Visit Us:</strong> 123 Main Street, Cityville</p>
+            <p><strong>Call Us:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email Us:</strong> info@cafe-name.com</p>
+
+            <p>Or use the form below to send us a message:</p>
+
+            <!-- You can add a contact form here if desired -->
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Cafe Name. All rights reserved.</p>
+        </footer>
     </div>
-    
-
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <p>Explore our delicious offerings that will satisfy your cravings.</p>
-    
-        <h3>Main Courses</h3>
-        <ul>
-            <li>Doner Kebab</li>
-            <li>Kofta Kebab</li>
-            <li>Iskender</li>
-            <li>Manti</li>
-        </ul>
-    
-        <h3>Appetizers</h3>
-        <ul>
-            <li>Hummus with Pita Bread</li>
-            <li>Baba Ganoush</li>
-            <li>Sigara Borek</li>
-        </ul>
-    
-        <h3>Desserts</h3>
-        <ul>
-            <li>Baklava</li>
-            <li>Kunefe</li>
-            <li>Turkish Delight</li>
-        </ul>
-    </section>
-    
-    <section id="special-offers">
-        <h2>Special Offers</h2>
-
-        <div class="offer">
-            <h3>Happy Hour</h3>
-            <p>Enjoy 20% off on all drinks from 4 PM to 6 PM!</p>
-        </div>
-
-        <div class="offer">
-            <h3>Lunch Combo</h3>
-            <p>Try our delicious lunch combo for only $10.99. Available weekdays from 11 AM to 2 PM.</p>
-        </div>
-
-        <!-- Add more offers as needed -->
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Cafe Name, where passion for food meets a warm and inviting atmosphere. Our journey began with a vision to create a place where people can enjoy delightful meals in a cozy setting.</p>
-    
-        <p>At Cafe Name, we take pride in offering a diverse menu that caters to various tastes, including a selection of delicious Turkish dishes. Our chefs use fresh and high-quality ingredients to craft each dish with care and attention to detail.</p>
-    
-        <p>Our commitment goes beyond just great food. We strive to create a welcoming environment for our guests, whether you're here for a quick coffee, a hearty meal, or a leisurely gathering with friends and family.</p>
-    
-        <p>Come and experience the unique blend of flavors, the friendly service, and the comfortable ambiance that make Cafe Name a special place. We look forward to serving you and making your dining experience memorable.</p>
-    </section>
-    
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to make a reservation? Reach out to us!</p>
-    
-        <p><strong>Visit Us:</strong> 123 Main Street, Cityville</p>
-        <p><strong>Call Us:</strong> +1 (555) 123-4567</p>
-        <p><strong>Email Us:</strong> info@cafe-name.com</p>
-    
-        <p>Or use the form below to send us a message:</p>
-    
-        <!-- You can add a contact form here if desired -->
-    </section>
-    
-
-    <footer>
-        <p>&copy; 2023 Cafe Name. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
