@@ -51,7 +51,7 @@ class LeadDeleteView(LoginRequiredMixin, DeleteView):
 
 class LeadUpdateView(LoginRequiredMixin, UpdateView):
     model = Lead
-    fields = ('name', 'email', 'description', 'priority', 'status',)
+    fields = ('name',  'description', 'priority', 'status',)
     success_url = reverse_lazy('leads:list')
 
     def get_context_data(self, **kwargs):
@@ -68,14 +68,14 @@ class LeadUpdateView(LoginRequiredMixin, UpdateView):
     
 class LeadCreateView(LoginRequiredMixin, CreateView):
     model = Lead
-    fields = ('name', 'email', 'description', 'priority', 'status',)
+    fields = ('name',  'description', 'priority', 'status',)
     success_url = reverse_lazy('leads:list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         team = self.request.user.userprofile.get_active_team()
         context['team'] = team
-        context['title'] = 'Add lead'
+        context['title'] = 'Add Product'
 
         return context
 

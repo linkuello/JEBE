@@ -1,17 +1,18 @@
-{% extends 'core/base.html' %}
+<form method="post" action="{% url 'workers:edit' worker.id %}" class="space-y-4 worker-form">
+    {% csrf_token %}
 
-{% block title %}Edit client{% endblock %}
+    {{ form.as_p }}
 
-{% block content %}
-    <div class="py-6 px-6">
-        <h1 class="text-xl">Edit client</h1>
+    <button class="py-4 px-8 bg-teal-500 text-white rounded-xl">Submit</button>
+</form>
 
-        <form method="post" action="." class="space-y-4">
-            {% csrf_token %}
-
-            {{ form.as_p }}
-
-            <button class="py-4 px-8 bg-teal-500 text-white rounded-xl">Submit</button>
-        </form>
+{% if form.errors %}
+    <div class="text-red-500 mt-2">
+        <p>There are errors in the form:</p>
+        <ul>
+            {% for error in form.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
     </div>
-{% endblock %}
+{% endif %}
