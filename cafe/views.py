@@ -3,6 +3,12 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import SectionForm
 from .models import Section
 
+def new_view(request):
+    return render(request, 'cafe/new.html', {
+    
+    })
+
+
 def cafe_view(request):
     return render(request, 'cafe/cafe.html', {
     
