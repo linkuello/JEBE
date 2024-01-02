@@ -8,12 +8,15 @@
     <style>
         /* General Styles */
         body {
-            background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000);
+            background-image: linear-gradient(to right top, #051937, #171228, #190a1a, #12040d, #000000); 
             color: #cc00ff;
             font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
+            background-attachment: fixed; 
+             margin: 0; 
         }
+
 
         /* Header Styles */
         header {
@@ -60,6 +63,11 @@
                 align-items: center;
             }
         }
+
+        .menu-item {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
@@ -70,7 +78,7 @@
 
     <nav>
         <a href="#Elzar">Elzar</a>
-        <a href="#Menu">Menu</a>
+        <a href="https://barashek.kg/">Menu</a>
         <a href="#Specials">Specials</a>
         <!-- Add more navigation links as needed -->
     </nav>
@@ -88,7 +96,14 @@
     <section id="Menu" class="content">
         <h2>Our Menu</h2>
         <p>Explore our delicious offerings that will satisfy your cravings...</p>
-        <!-- Add menu items, descriptions, and images here -->
+        <div class="menu-item">Soup - $100</div>
+        <div class="menu-item">Soup - $100</div>
+        <div class="menu-item">Salad - $80</div>
+        <div class="menu-item">Pasta - $120</div>
+        <div class="menu-item">Burger - $150</div>
+        <div class="menu-item">Pizza - $130</div>
+        <div class="menu-item">Steak - $200</div>
+        <div class="menu-item">Fish Tacos - $110</div>
     </section>
 
     <section id="Specials" class="content">
@@ -100,6 +115,7 @@
     <footer>
         <p>&copy; 2023 Cafe Name. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
